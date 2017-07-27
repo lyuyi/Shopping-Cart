@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>购物车</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<div class="container">
+	<header>
+		<a href="" class="logo"><img src="img/logo.png"></a>
+		<div class="search-container">
+		    <div>
+			    <ul id="search-tab" class="search-box">
+			        <li id="tab_1" class="selected">
+			            <a href="#">宝贝</a>
+			        </li>
+			        <li id="tab_2">
+			            <a href="#">天猫</a>
+			        </li>
+			        <li id="tab_3">
+			            <a href="#">店铺</a>
+			        </li>
+			        </ul>
+			    </div>
+			    <div class="searchPannel">
+			    <form>
+			        <div class="search-tips">   
+			            </div>
+			            <div class="search-button">
+			            <button class="btn-search" type="submit">搜 索</button>
+			            </div>
+			            <div class="search-common-pannel">
+			             <input type="text" id="input">
+			             <i class="iconfont" id="iconfont">ő</i>
+			            <i></i>
+			            </div>
+			        </form>
+		    </div>    
+		</div>
+	</header>
+	<section>
+		<ul class="goods-head">
+			<li class="goods-select">
+				全部商品&nbsp;<span id="num1">5</span>
+				
+			</li>
+			<li>
+				降价商品&nbsp;<span id="num2">0</span>
+			</li>
+			<li>
+				库存紧张&nbsp;<span id="num3">0</span>
+			</li>
+		</ul>
+		<div class="content">
+			<div class="all-total">
+				<span><label><input type="checkbox" class="check-all check">全选</label></span>
+				<span>商品信息</span>
+				<span>单价</span>
+				<span>数量</span>
+				<span>金额</span>
+				<span>操作</span>
+			</div>	
+			<div class="content">
+				<div id="cartTable" class="one-shop">
+					<div class="one-goods"> 
+	    				<div class="goods-msg"> 	
+							<div class="shop">
+								<label class="checkbox" for=""><input type="checkbox" class="check ShopCheck"><img src="img/0.png"></label>					
+								<div class="shop-name">店铺：<a href="">大象摄影公会</a>&nbsp;<a href=""><img src="img/6.gif"></a></div>
+								
+								<div class="coupon">优惠券</div>							
+							</div>
+							<div class="box" id="box">
+								<label class="checkbox"><input type="checkbox" name="wares" class="check-one check"></label>
+								<div class="goods"><img src="img/camera.jpg" id="oimg"><span><a href="#">【大象摄影】行货尼康D5300套机18-55镜头入门高清数码单反相机</a></span>
+								<span class="small-icon">
+									<ul>
+										<li><a href="#"><img src="img/2.png"></a></li>
+										<li><a href="#"><img src="img/5.png"></a></li>
+										<li><a href="#"><img src="img/1.png"></a></li>
+										<li><a href="#"><img src="img/3.png"></a></li>
+									</ul>
+								</span>
+								</div>
+								<div class="classify">
+								颜色分类：配尼康18-55<br>2016新款镜头[原厂套机镜头]<br>
+								套餐：官方标配
+								</div>
+								<span class="dashe"></span>
+								<div class="price">
+									<span class="expensive">￥4123.75</span><br>
+									<span class="GoodsPrice">￥3299.00</span>
+									<div id="sales">卖家促销<span class="arrow"></span></div>
+								</div>
+								<div class="count">
+									<span class="reduce"></span>
+									<input type="text" value="1" class="count-input">
+									<span class="add">+</span>
+								</div>
+								<div class="subtotal">¥3299.00</div>
+								<div class="operation"><span class="move">移入收藏夹</span><br><span class="delete">删除</span><br><span class="similarity">相似宝贝</span></div>	
+							</div>
+					    </div>
+					    
+					</div>
+				</div>
+				<div id="cartTable" class="one-shop">
+					<div class="one-goods"> 
+	    				<div class="goods-msg">
+							<div class="shop">
+								<label class="checkbox"><input type="checkbox" class="check ShopCheck"><img src="img/0.png"><img src="img/7.png"></label>
+								<div class="shop-name">店铺：<a href="">花花草草绿植店</a>&nbsp;<a href=""><img src="img/6.gif"></a></div>
+								<div>
+									<div class="coupon">优惠券</div>
+								</div>
+							</div>
+							<div class="box" id="box">
+								<label class="checkbox"><input class="check-one check" type="checkbox" name="wares"></label>
+					            <div class="goods"><img src="img/flower.jpg" id="oimg"><span><a href="">花花草草栀子花盆栽室内绿植绿萝袖珍椰子办公室植物净化空气盆栽</a></span>
+								<span class="small-icon">
+									<ul>
+										<li><a href="#"><img src="img/2.png"></a></li>
+										<li><a href="#"><img src="img/1.png"></a></li>
+									</ul>
+								</span>
+					            </div>
+					            <div class="classify">
+					           		颜色分类：栀子花带10cm吸水盆是否含花盆：带花盆栽好	
+								</div>
+					            <div class="price">
+					            	<span class="expensive">￥27.60</span><br>
+									<span class="GoodsPrice">￥13.80</span>
+									<div id="sales">卖家促销<span class="arrow"></span></div>
+								</div>
+					            <div class="count"><span class="reduce"></span><input class="count-input" type="text" value="1"/><span class="add">+</span></div>
+					            <div class="subtotal">¥13.8</div>
+					            <div class="operation"><span class="move">移入收藏夹</span><br><span class="delete">删除</span><br><span class="similarity">相似宝贝</span></div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				<div id="cartTable" class="one-shop">
+					<div class="one-goods"> 
+	    				<div class="goods-msg">
+							<div class="shop">
+								<label class="checkbox"><input type="checkbox" class="check ShopCheck"><img src="img/0.png"><img src="img/7.png"></label>
+								<div class="shop-name">店铺：<a href="">旗木卡卡の墨镜库</a>&nbsp;<a href=""><img src="img/6.gif"></a></div>
+								<div>
+									<div class="coupon">优惠券</div>
+								</div>
+							</div>
+							<div class="box" id="box">
+								<label class="checkbox"><input class="check-one check" type="checkbox" name="wares"></label>
+					            <div class="goods"><img src="img/mj.jpg" id="oimg"/><span><a href="">奋钧花儿与少年江疏影同款太阳镜女生超轻个性墨镜开车偏光反光潮</a></span>
+								<span class="small-icon">
+									<ul>
+										<li><a href="#"><img src="img/2.png"></a></li>
+										<li><a href="#"><img src="img/1.png"></a></li>
+										<li><a href="#"><img src="img/9.png"></a></li>
+										<li><a href="#"><img src="img/3.png"></a></li>
+									</ul>
+								</span>
+					            </div>
+					            <div class="classify">
+									颜色分类：水银色（江疏影）偏光
+								</div>
+					            <div class="price">
+					            	<span class="expensive">￥128.00</span><br>
+									<span class="GoodsPrice">￥68.00</span>
+									<div id="sales">卖家促销<span class="arrow"></span></div>
+					            </div>
+					            <div class="count"><span class="reduce"></span><input class="count-input" type="text" value="1"/><span class="add">+</span></div>
+					            <div class="subtotal">¥68.00</div>
+					            <div class="operation"><span class="move">移入收藏夹</span><br><span class="delete">删除</span><br><span class="similarity">相似宝贝</span></div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				<div id="cartTable" class="one-shop">
+					<div class="one-goods"> 
+	    				<div class="goods-msg">
+							<div class="shop">
+								<label class="checkbox"><input type="checkbox" class="check ShopCheck"><img src="img/7.png"></label>
+								<div class="shop-name">店铺：<a href="">古拉良品潮流女装</a>&nbsp;<a href=""><img src="img/6.gif"></a></div>
+								<div>
+									<div class="coupon">优惠券</div>
+								</div>
+							</div>
+							<div class="box" id="box">
+								<label class="checkbox"><input class="check-one check" type="checkbox" name="wares"></label>
+					            <div class="goods"><img src="img/qz.jpg" id="oimg"/><span><a href="">古拉良品夏季新款吊带连衣裙韩版宽松显瘦印花裙子镂空拼接中长裙</a></span>
+								<span class="small-icon">
+									<ul>
+										<li><a href="#"><img src="img/2.png"></a></li>
+										<li><a href="#"><img src="img/1.png"></a></li>
+										<li><a href="#"><img src="img/3.png"></a></li>
+									</ul>
+								</span>
+					            </div>
+					            <div class="classify">
+									颜色分类：白色（卖完不补）[扎染花色吊带裙]<br>尺码：s
+								</div>
+					            <div class="price">
+									<span class="expensive">￥199.00</span><br>
+									<span class="GoodsPrice">￥159.81</span>
+									<div id="sales">卖家促销<span class="arrow"></span></div>
+					            </div>
+					            <div class="count"><span class="reduce"></span><input class="count-input" type="text" value="1"/><span class="add">+</span></div>
+					            <div class="subtotal">¥159.81</div>
+					            <div class="operation"><span class="move">移入收藏夹</span><br><span class="delete">删除</span><br><span class="similarity">相似宝贝</span></div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				<div id="cartTable" class="one-shop">
+					<div class="one-goods"> 
+	    				<div class="goods-msg">
+							<div class="shop">
+								<label class="checkbox"><input type="checkbox" class="check ShopCheck"><img src="img/0.png"></label>
+								<div class="shop-name">店铺：<a href="">夏洛特创意生活馆</a>&nbsp;<a href=""><img src="img/6.gif"></a></div>
+								<div>
+									<div class="coupon">优惠券</div>
+								</div>
+							</div>
+							<div class="box" id="box">
+								<label class="checkbox"><input class="check-one check" type="checkbox" name="wares"></label>
+					            <div class="goods"><img src="img/zz.jpg" id="oimg"/><span><a href="">原木麋鹿书架服装店样板房橱窗客厅转角置物架装饰玄关桌动物摆件</a></span>
+								<span class="small-icon">
+									<ul>
+										<li><a href="#"><img src="img/2.png"></a></li>
+										<li><a href="#"><img src="img/1.png"></a></li>
+										<li><a href="#"><img src="img/8.png"></a></li>
+										<li><a href="#"><img src="img/3.png"></a></li>
+									</ul>
+								</span>
+					            </div>
+					            <div class="classify">
+					            	颜色分类：0.85米转头鹿（实木板）
+					            </div>
+					            <div class="price">
+									<span class="expensive">￥312.00</span><br>
+									<span class="GoodsPrice">￥218.40</span>
+									<div id="sales">卖家促销<span class="arrow"></span></div>
+					            </div>
+					            <div class="count"><span class="reduce"></span><input class="count-input" type="text" value="1"/><span class="add">+</span></div>
+					            <div class="subtotal">¥218.40</div>
+					            <div class="operation"><span class="move">移入收藏夹</span><br><span class="delete">删除</span><br><span class="similarity">相似宝贝</span></div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+	</section>
+	<div class="foot" id="foot">
+	    <label class="fl select-all"><input type="checkbox" class="check-all check"/>&nbsp;全选</label>
+	    <a class="fl deleted" id="deleteAll" href="javascript:;">删除</a>
+	    <div class="fr closing"><input type="image" src="img/10.png" /></div>
+	    <div class="fr total">合计：<span id="priceTotal">¥0.00</span></div>
+	    <div class="fr choice" id="choice">已选商品
+	        <span id="choiceTotal">0</span> 件
+	        <span class="arrow up">︽</span>
+	        <span class="arrow down">︾</span>
+	    </div>
+	    <div class="choice-view">
+	        <div id="choiceViewList" class="clearfix">
+	            
+	        </div>
+	        <span class="arrow">◆<span>◆</span></span>
+	    </div>
+	</div>
+</div>
+	
+</body>
+</html>
